@@ -1,0 +1,202 @@
+
+.home-container {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f9ff;
+  background-image: url('https://tse2.mm.bing.net/th/id/OIP.J26jnI4WagUuk7w-ocBSvwHaEK?w=331&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3');
+}
+
+.hero-section {
+  background: linear-gradient(to right, #00c6ff, #7ba5d7);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 10px;
+  position: relative;
+  height: 700px;
+  margin-top: 65px;
+}
+
+.hero-image {
+  width: 70%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-buttons .btn {
+  margin: 10px;
+  padding: 12px 24px;
+  background-color: white;
+  color: #0072ff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-secondary {
+  background-color: #f0f0f0;
+  color: #0072ff;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.feature-card {
+  width: 30%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+/* Navigation Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #160f5e;
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color:white;
+}
+
+.main-nav .nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  background-color: #0072ff;
+  color: #ffffff;
+}
+
+ 
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.auth-buttons .btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn {
+  background-color: #0072ff;
+  color: white;
+  border: 2px solid #0072ff;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: #77c7e9;
+}
+
+.register-btn {
+  background-color: #f0f0f0;
+  color: #0072ff;
+  border: 2px solid #0072ff;
+}
+
+.register-btn:hover {
+  background-color: #0072ff;
+  color: white;
+}
+
+
+.user-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.username {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background-color: #0072ff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: white;
+  color: #0072ff;
+  border: 2px solid #0072ff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #0072ff;
+  color: white;
+}
