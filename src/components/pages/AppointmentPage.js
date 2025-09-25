@@ -292,12 +292,12 @@ const Appointment = () => {
                 onChange={(e) => setDate(e.target.value)}
               /> */}
               <input
-  type="date"
-  id="date"
-  value={date}
-  min={new Date().toISOString().split("T")[0]}
-  onChange={(e) => setDate(e.target.value)}
-/>
+                type="date"
+                id="date"
+                value={date}
+                min={new Date().toISOString().split("T")[0]}
+                onChange={(e) => setDate(e.target.value)}
+              />
 
             </div>
 
