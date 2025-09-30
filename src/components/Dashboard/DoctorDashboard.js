@@ -126,7 +126,7 @@ const DoctorDashboard = () => {
                       </div>
 
                       <div className="action-buttons">
-                        <button onClick={() => handleComplete(appt.id)}>Complete</button>
+                        <button onClick={() => handleComplete(appt.id)}>Confirm</button>
                         <button onClick={() => handleCancel(appt.id)}>Cancel</button>
                         <button onClick={() => handleReschedule(appt.id)}>Reschedule</button>
                       </div>
