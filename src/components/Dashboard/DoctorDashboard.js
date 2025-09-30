@@ -38,7 +38,7 @@ const DoctorDashboard = () => {
       appt.id === id
         ? {
             ...appt,
-            status: "Completed",
+            status: "Confirmed",
             consultation: consultationNotes[id] || "No notes provided",
           }
         : appt
@@ -108,7 +108,7 @@ const DoctorDashboard = () => {
                   <p><strong>Symptoms:</strong> {appt.symptoms || "Not provided"}</p>
                   <p><strong>Consultation:</strong> {appt.consultation || "Not yet provided"}</p>
 
-                  {appt.status !== "Completed" && appt.status !== "Cancelled" && (
+                  {appt.status !== "Confirmed" && appt.status !== "Cancelled" && (
                     <>
                       <div className="consultation-field">
                         <label>Consultation Notes:</label>
