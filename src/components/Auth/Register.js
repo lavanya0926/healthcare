@@ -18,6 +18,21 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
+
+    // ✅ Regex for name: only letters (spaces allowed)
+    const nameRegex = /^[A-Za-z\s]+$/;
+    if (!nameRegex.test(name)) {
+      alert('Name must contain only letters and spaces.');
+      return;
+    }
+
+    // ✅ Regex for password: minimum 8 characters
+    const passwordRegex = /^.{8,}$/;
+    if (!passwordRegex.test(password)) {
+      alert('Password must be at least 8 characters long.');
+      return;
+    }
+
     const newUser = {
       name,
       role,
@@ -45,21 +60,43 @@ const Register = () => {
       <Header />
       <h2>Create Your HealthConnect Account</h2>
       <form onSubmit={handleRegister}>
-        <input type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} required />
+        <input
+          type="text"
+          placeholder="Full Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
         {role === 'doctor' && (
-          <SpecializationSelector value={specialization} onChange={(e) => setSpecialization(e.target.value)} />
+          <SpecializationSelector
+            value={specialization}
+            onChange={(e) => setSpecialization(e.target.value)}
+          />
         )}
-        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-        <input type="password" placeholder="Create Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Create Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
         <button type="submit">Register</button>
       </form>
       <p>
         Already have an account?{' '}
-        <span className="auth-link" onClick={() => navigate(`/login?role=${role}`)}>Login here</span>
+        <span className="auth-link" onClick={() => navigate(`/login?role=${role}`)}>
+          Login here
+        </span>
       </p>
     </div>
   );
 };
 
 export default Register;
-
